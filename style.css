@@ -1,0 +1,141 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f8fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: 2px solid #dfe6e9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: #f9fbfc;
+  width: 100%;
+  max-width: 500px;
+}
+
+legend {
+  font-weight: bold;
+  color: #34495e;
+  padding: 0 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+input[type='number'] {
+  width: 120px;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  text-align: center;
+}
+
+input[type='number']:focus {
+  outline: none;
+  border-color: #3498db;
+  background-color: #ecf6fc;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#resultado,
+#explicacion {
+  background: #ecf0f1;
+  border-left: 5px solid #3498db;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#historial {
+  margin-top: 30px;
+  background: #f1f2f6;
+  border: 1px solid #dcdde1;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#historial h3 {
+  margin-top: 0;
+  color: #2d3436;
+}
+
+.historial-item {
+  background: #ffffff;
+  border: 1px solid #dfe6e9;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+@media (max-width: 600px) {
+  input[type='number'] {
+    width: 100px;
+    font-size: 0.85rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}

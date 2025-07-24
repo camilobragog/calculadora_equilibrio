@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora de Equilibrio Químico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Equilibrio Químico</h1>
+
+    <form id="equilibrioForm">
+      <fieldset class="input-group">
+        <legend>Coeficientes estequiométricos</legend>
+        <div class="input-wrapper">
+          <label for="coefA">A:</label>
+          <input type="number" id="coefA" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="coefB">B:</label>
+          <input type="number" id="coefB" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="coefC">C:</label>
+          <input type="number" id="coefC" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="coefD">D:</label>
+          <input type="number" id="coefD" required />
+        </div>
+      </fieldset>
+
+      <fieldset class="input-group">
+        <legend>Concentraciones iniciales (mol/L)</legend>
+        <div class="input-wrapper">
+          <label for="concA">[A]:</label>
+          <input type="number" id="concA" step="any" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="concB">[B]:</label>
+          <input type="number" id="concB" step="any" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="concC">[C]:</label>
+          <input type="number" id="concC" step="any" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="concD">[D]:</label>
+          <input type="number" id="concD" step="any" required />
+        </div>
+      </fieldset>
+
+      <fieldset class="input-group">
+        <legend>Constante de equilibrio (Kc)</legend>
+        <div class="input-wrapper">
+          <label for="kc">Kc:</label>
+          <input type="number" id="kc" step="any" required />
+        </div>
+      </fieldset>
+
+      <button type="submit">Calcular equilibrio</button>
+    </form>
+
+    <div id="resultado"></div>
+    <div id="explicacion"></div>
+
+    <div id="historial">
+      <h3>Historial de ejercicios</h3>
+      <div id="listaHistorial"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
